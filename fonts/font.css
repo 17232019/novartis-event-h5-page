@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'AlimamaFangYuanTiVF';
+  src: url('./AlimamaFangYuanTiVF-Thin(1).ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RuiZiAoYunJingShenPinBoJianMianFei-Shan';
+  src: url('./RuiZiAoYunJingShenPinBoJianMianFei-Shan(REEJI-PinboGB-Flash)-2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
