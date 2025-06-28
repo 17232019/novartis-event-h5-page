@@ -1,0 +1,19 @@
+.back-btn {
+  position: fixed;
+  left: 50%;
+  bottom: 62px;
+  transform: translateX(-50%);
+  width: 134px;
+  height: 134px;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 99;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: box-shadow 0.15s;
+}
+.back-btn:active {
+  box-shadow: 0 1px 4px rgba(0,0,0,0.18) inset;
+} 

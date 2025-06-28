@@ -1,0 +1,121 @@
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-bg {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.login-form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 55vh;
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 350px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255,255,255,0.0);
+}
+
+.login-form label {
+  font-size: 1.2rem;
+  color: #003399;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+  outline: none;
+  text-align: center;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: none;
+  background: #003399;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.id-label-img {
+  position: absolute;
+  left: 50%;
+  top: 38vh;
+  width: 62.6vw;
+  max-width: 313px;
+  height: 5.54vh;
+  max-height: 110px;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.id-input-on-img {
+  position: absolute;
+  left: calc(50% - 2vw); /* 再向左移动，原2vw改为-2vw */
+  top: 38vh;
+  width: 22vw;
+  max-width: 110px;
+  height: 5.54vh;
+  max-height: 110px;
+  transform: translateY(0);
+  z-index: 10;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: #003399;
+  text-align: left;
+  font-family: inherit;
+  pointer-events: auto;
+  padding-left: 0.5vw;
+}
+
+.login-btn-img {
+  position: absolute;
+  left: 50%;
+  top: 54vh;
+  width: 35vw;
+  max-width: 210px;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: transform 0.08s cubic-bezier(.4,0,.2,1), box-shadow 0.08s;
+}
+.login-btn-img.active {
+  transform: translateX(-50%) scale(0.96);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10) inset;
+}
+
+.error-tip {
+  position: absolute;
+  left: 50%;
+  top: 62vh;
+  transform: translateX(-50%);
+  color: #d32f2f;
+  font-size: 1rem;
+  z-index: 10;
+} 

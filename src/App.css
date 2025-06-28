@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 隐藏任何溢出 */
+}
+
+.page-container {
+  position: relative;
+  width: 100vw; /* 占据整个视口宽度 */
+  height: 100vh; /* 占据整个视口高度 */
+  overflow: hidden;
+}
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-size: auto 100%; /* 核心修正：高度100%，宽度自适应 */
+  background-position: center top; /* 核心修正：确保顶部内容不被裁剪 */
+  background-repeat: no-repeat;
+}
+
+.page-long {
+  position: relative;
+  width: 100vw;
+  height: auto; /* 高度自适应内容 */
+  overflow-y: scroll; /* 允许纵向滚动 */
+  -webkit-overflow-scrolling: touch; /* 提升iOS滚动体验 */
+}
+
+.page-long .bg {
+  position: absolute; /* 长图背景随内容滚动 */
+  height: auto; /* 背景高度自适应长图内容 */
+  min-height: 100vh; /* 确保至少铺满一屏 */
+}
+
+.page-long img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

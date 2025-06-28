@@ -1,0 +1,61 @@
+.schedule-menu-page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.schedule-btn-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  transition: transform 0.08s cubic-bezier(.4,0,.2,1), box-shadow 0.08s;
+}
+.schedule-btn-img.active {
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10) inset;
+}
+
+/* 会议日程标题按钮 */
+.abs-title {
+  top: 35%;
+  width: 46.7%;
+  height: 5.54%;
+}
+/* 7.10 全体大会 */
+.abs-all {
+  top: 48%; /* 35%+13% */
+  width: 69.5%;
+  height: 4.71%;
+}
+/* 7.11 可善挺品牌日及培训日 */
+.abs-keshanting {
+  top: 58%; /* 35%+23% */
+  width: 69.5%;
+  height: 4.71%;
+}
+/* 7.11 茁乐品牌日及培训日 */
+.abs-zhuole {
+  top: 68%; /* 35%+33% */
+  width: 69.5%;
+  height: 4.71%;
+}
+/* 7.12 英雄演武场 */
+.abs-hero {
+  top: 78%; /* 35%+43% */
+  width: 69.5%;
+  height: 4.71%;
+}
+
+.schedule-menu-bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: contain;
+  transform: translateX(-50%);
+  z-index: 0;
+} 
